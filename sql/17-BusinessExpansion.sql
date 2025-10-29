@@ -23,9 +23,18 @@ select * from business_operations ;
 +----------------------+------------------+
 */
 
+-- Postgres
+-- with cte as (
+-- select city_id, to_char(min(business_date), 'YYYY') as first_operation_year from business_operations
+-- group by city_id
+-- )
+-- select first_operation_year, count(*) as no_of_new_cities from cte
+-- group by first_operation_year
+-- order by first_operation_year
 
+-- DuckDB:
 with cte as (
-select city_id, to_char(min(business_date), 'YYYY') as first_operation_year from business_operations
+select city_id, year(min(business_date)) as first_operation_year from business_operations
 group by city_id
 )
 select first_operation_year, count(*) as no_of_new_cities from cte

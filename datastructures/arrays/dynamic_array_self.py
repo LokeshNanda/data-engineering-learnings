@@ -38,17 +38,35 @@ class DynamicArray(object):
             self._resize(2 * self.capacity)
             
         for i in range(self.n-1, index-1, -1):
-            print(f'i is {i}  -- n is {self.n} -- index is {index}')
             self.A[i+1] = self.A[i]
             
         self.A[index] = item
         self.n += 1
     
     def delete(self):
-        pass
+        if self.n == 0:
+            print('Nothing to delete, array is empty')
+        
+        self.A[self.n-1] = 0
+        self.n -= 1
     
     def removeAt(self, index):
-        pass
+        if self.n == 0:
+            print('Nothing to delete, array is empty')
+        
+        if index < 0 or index >= self.n:
+            return IndexError("Array index is out of bound")
+        
+        if index == self.n-1:
+            self.A[index] = 0
+            self.n -= 1
+            return
+        
+        for i in range(index, self.n-1):
+            self.A[i] = self.A[i+1]
+        
+        self.A[self.n-1] = 0
+        self.n -= 1
     
     def _resize(self, new_cap):
         B = self.create_array(new_cap)
@@ -68,4 +86,5 @@ arr.append(6)
 # print(len(arr))
 # print(arr[1])
 arr.insertAt(11,1)
-print(arr[0], arr[1], arr[2], arr[3])
+arr.removeAt(1)
+print(arr[0], arr[1], arr[2])

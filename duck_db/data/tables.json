@@ -1,0 +1,45 @@
+[
+  {
+    "table_name": "business_operations",
+    "schema": [
+      {
+        "column_name": "business_date",
+        "data_type": "DATE"
+      },
+      {
+        "column_name": "city_id",
+        "data_type": "INTEGER"
+      }
+    ],
+    "data": [
+      ["2020-01-02", 3],
+      ["2020-07-01", 7],
+      ["2021-01-01", 3],
+      ["2021-02-03", 19],
+      ["2022-12-01", 3],
+      ["2022-12-15", 3],
+      ["2022-02-28", 12]
+    ]
+  },
+  {
+    "table_name": "employee_salaries",
+    "schema": [
+      {
+        "column_name": "employee_id",
+        "data_type": "INTEGER"
+      },
+      {
+        "column_name": "salary",
+        "data_type": "DECIMAL(10, 2)"
+      },
+      {
+        "column_name": "department",
+        "data_type": "VARCHAR"
+      }
+    ],
+    "data": [
+      [101, 75000.00, "HR"],
+      [102, 90000.50, "Engineering"]
+    ]
+  }
+]

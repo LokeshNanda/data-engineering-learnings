@@ -41,5 +41,92 @@
       [101, 75000.00, "HR"],
       [102, 90000.50, "Engineering"]
     ]
+  },
+  {
+    "table_name": "orders",
+    "schema": [
+      {
+        "column_name": "order_id",
+        "data_type": "INTEGER"
+      },
+      {
+        "column_name": "product_id",
+        "data_type": "VARCHAR"
+      },
+      {
+        "column_name": "category",
+        "data_type": "VARCHAR"
+      },
+      {
+        "column_name": "unit_price",
+        "data_type": "INTEGER"
+      },
+      {
+        "column_name": "quantity",
+        "data_type": "INTEGER"
+      }
+    ],
+    "data": [
+      [100, "Chair-1221", "Furniture", 1500, 1],
+      [101, "Table-3421", "Furniture", 2000, 3],
+      [102, "Chair-1221", "Furniture", 1500, 2],
+      [103, "Table-9762", "Furniture", 7000, 2],
+      [104, "Shoes-1221", "Footwear", 1700, 1],
+      [105, "floaters-3421", "Footwear", 2000, 1],
+      [106, "floaters-3421", "Footwear", 2000, 1],
+      [107, "floaters-9875", "Footwear", 1500, 2]
+    ]
+  },
+  {
+    "table_name": "users",
+    "schema": [
+      {
+        "column_name": "user_id",
+        "data_type": "INTEGER"
+      },
+      {
+        "column_name": "username",
+        "data_type": "VARCHAR"
+      },
+      {
+        "column_name": "opening_balance",
+        "data_type": "INTEGER"
+      }
+    ],
+    "data": [
+      [100, "Ankit", 1000],
+      [101, "Rahul", 9000],
+      [102, "Amit", 5000],
+      [103, "Agam", 7500]
+    ]
+  },
+  {
+    "table_name": "transactions",
+    "schema": [
+      {
+        "column_name": "id",
+        "data_type": "INTEGER"
+      },
+      {
+        "column_name": "from_userid",
+        "data_type": "INTEGER"
+      },
+      {
+        "column_name": "to_userid",
+        "data_type": "INTEGER"
+      },
+      {
+        "column_name": "amount",
+        "data_type": "INTEGER"
+      }
+    ],
+    "data": [
+      [1, 100, 102, 500],
+      [2, 102, 101, 700],
+      [3, 101, 102, 600],
+      [4, 102, 100, 1500],
+      [5, 102, 101, 800],
+      [6, 102, 101, 300]
+    ]
   }
 ]

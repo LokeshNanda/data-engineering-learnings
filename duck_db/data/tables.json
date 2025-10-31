@@ -128,5 +128,80 @@
       [5, 102, 101, 800],
       [6, 102, 101, 300]
     ]
+  },
+  {
+    "table_name": "creators",
+    "schema": [
+      {
+        "column_name": "id",
+        "data_type": "INTEGER"
+      },
+      {
+        "column_name": "name",
+        "data_type": "VARCHAR"
+      },
+      {
+        "column_name": "platform",
+        "data_type": "VARCHAR"
+      },
+      {
+        "column_name": "followers",
+        "data_type": "INTEGER"
+      }
+    ],
+    "data": [
+      [100, "Ankit", "YouTube", 90000],
+      [100, "Ankit", "LinkedIn", 150000],
+      [101, "Warikoo", "YouTube", 500000],
+      [101, "Warikoo", "LinkedIn", 600000],
+      [101, "Warikoo", "Instagram", 800000],
+      [102, "Dhruv", "LinkedIn", 60000],
+      [102, "Dhruv", "YouTube", 900000],
+      [102, "Dhruv", "Instagram", 800000],
+      [103, "Ravi", "YouTube", 100000],
+      [103, "Ravi", "LinkedIn", 120000],
+      [103, "Ravi", "Instagram", 95000],
+      [104, "Neha", "YouTube", 250000],
+      [104, "Neha", "LinkedIn", 300000],
+      [104, "Neha", "Instagram", 350000],
+      [105, "Amit", "YouTube", 450000],
+      [105, "Amit", "LinkedIn", 500000],
+      [105, "Amit", "Instagram", 550000]
+    ]
+  },
+  {
+    "table_name": "youtube_videos",
+    "schema": [
+      {
+        "column_name": "id",
+        "data_type": "INTEGER"
+      },
+      {
+        "column_name": "creator_id",
+        "data_type": "INTEGER"
+      },
+      {
+        "column_name": "publish_date",
+        "data_type": "DATE"
+      },
+      {
+        "column_name": "views",
+        "data_type": "INTEGER"
+      }
+    ],
+    "data": [
+      [1, 100, "2024-01-01", 52000],
+      [2, 100, "2024-01-06", 62000],
+      [3, 101, "2024-01-05", 59000],
+      [4, 101, "2024-01-07", 22000],
+      [5, 102, "2024-01-05", 70000],
+      [6, 102, "2024-01-09", 90000],
+      [7, 103, "2024-01-11", 48000],
+      [8, 103, "2024-01-12", 53000],
+      [9, 104, "2024-01-15", 76000],
+      [10, 104, "2024-01-17", 81000],
+      [11, 105, "2024-01-20", 95000],
+      [12, 105, "2024-01-22", 99000]
+    ]
   }
 ]

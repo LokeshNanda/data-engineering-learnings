@@ -1,10 +1,25 @@
-# DSA
+# Data Engineering Practice Book
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![DuckDB](https://img.shields.io/badge/Duckdb-000000?style=for-the-badge&logo=Duckdb&logoColor=yellow)
+--
+![VSCODE-EXTENSION](https://img.shields.io/badge/DBCODE-vscode_extension-blue)
+
 Hands-on data structures, algorithms, SQL challenges, and PySpark exercises, all in one Python-first workspace.
+
 ## Overview
 - Python 3.12 project managed through `pyproject.toml` and compatible with either `uv` or traditional `pip` workflows.
 - Data structure implementations paired with short writeups for quick revision.
 - Self-contained DuckDB sandbox (DDL + seed data) to iterate on analytical SQL problems.
 - PySpark notebooks converted to runnable scripts for distributed-processing practice.
+## Pre-Requisite
+Recommend to install DBCode extension in VSCode for easy running of SQL Code.
+
+Use the existing duckdb file: `.\duckdb\sql_challenges.duckdb`
+
+
+For addition of new table:
+1. Update the file `.\duck_db\data\tables.json` 
+2. Run the below command: `python .\duck_db\populate_duckdb.py`
 ## Repository Layout
 ```text
 .

@@ -41,5 +41,167 @@
       [101, 75000.00, "HR"],
       [102, 90000.50, "Engineering"]
     ]
+  },
+  {
+    "table_name": "orders",
+    "schema": [
+      {
+        "column_name": "order_id",
+        "data_type": "INTEGER"
+      },
+      {
+        "column_name": "product_id",
+        "data_type": "VARCHAR"
+      },
+      {
+        "column_name": "category",
+        "data_type": "VARCHAR"
+      },
+      {
+        "column_name": "unit_price",
+        "data_type": "INTEGER"
+      },
+      {
+        "column_name": "quantity",
+        "data_type": "INTEGER"
+      }
+    ],
+    "data": [
+      [100, "Chair-1221", "Furniture", 1500, 1],
+      [101, "Table-3421", "Furniture", 2000, 3],
+      [102, "Chair-1221", "Furniture", 1500, 2],
+      [103, "Table-9762", "Furniture", 7000, 2],
+      [104, "Shoes-1221", "Footwear", 1700, 1],
+      [105, "floaters-3421", "Footwear", 2000, 1],
+      [106, "floaters-3421", "Footwear", 2000, 1],
+      [107, "floaters-9875", "Footwear", 1500, 2]
+    ]
+  },
+  {
+    "table_name": "users",
+    "schema": [
+      {
+        "column_name": "user_id",
+        "data_type": "INTEGER"
+      },
+      {
+        "column_name": "username",
+        "data_type": "VARCHAR"
+      },
+      {
+        "column_name": "opening_balance",
+        "data_type": "INTEGER"
+      }
+    ],
+    "data": [
+      [100, "Ankit", 1000],
+      [101, "Rahul", 9000],
+      [102, "Amit", 5000],
+      [103, "Agam", 7500]
+    ]
+  },
+  {
+    "table_name": "transactions",
+    "schema": [
+      {
+        "column_name": "id",
+        "data_type": "INTEGER"
+      },
+      {
+        "column_name": "from_userid",
+        "data_type": "INTEGER"
+      },
+      {
+        "column_name": "to_userid",
+        "data_type": "INTEGER"
+      },
+      {
+        "column_name": "amount",
+        "data_type": "INTEGER"
+      }
+    ],
+    "data": [
+      [1, 100, 102, 500],
+      [2, 102, 101, 700],
+      [3, 101, 102, 600],
+      [4, 102, 100, 1500],
+      [5, 102, 101, 800],
+      [6, 102, 101, 300]
+    ]
+  },
+  {
+    "table_name": "creators",
+    "schema": [
+      {
+        "column_name": "id",
+        "data_type": "INTEGER"
+      },
+      {
+        "column_name": "name",
+        "data_type": "VARCHAR"
+      },
+      {
+        "column_name": "platform",
+        "data_type": "VARCHAR"
+      },
+      {
+        "column_name": "followers",
+        "data_type": "INTEGER"
+      }
+    ],
+    "data": [
+      [100, "Ankit", "YouTube", 90000],
+      [100, "Ankit", "LinkedIn", 150000],
+      [101, "Warikoo", "YouTube", 500000],
+      [101, "Warikoo", "LinkedIn", 600000],
+      [101, "Warikoo", "Instagram", 800000],
+      [102, "Dhruv", "LinkedIn", 60000],
+      [102, "Dhruv", "YouTube", 900000],
+      [102, "Dhruv", "Instagram", 800000],
+      [103, "Ravi", "YouTube", 100000],
+      [103, "Ravi", "LinkedIn", 120000],
+      [103, "Ravi", "Instagram", 95000],
+      [104, "Neha", "YouTube", 250000],
+      [104, "Neha", "LinkedIn", 300000],
+      [104, "Neha", "Instagram", 350000],
+      [105, "Amit", "YouTube", 450000],
+      [105, "Amit", "LinkedIn", 500000],
+      [105, "Amit", "Instagram", 550000]
+    ]
+  },
+  {
+    "table_name": "youtube_videos",
+    "schema": [
+      {
+        "column_name": "id",
+        "data_type": "INTEGER"
+      },
+      {
+        "column_name": "creator_id",
+        "data_type": "INTEGER"
+      },
+      {
+        "column_name": "publish_date",
+        "data_type": "DATE"
+      },
+      {
+        "column_name": "views",
+        "data_type": "INTEGER"
+      }
+    ],
+    "data": [
+      [1, 100, "2024-01-01", 52000],
+      [2, 100, "2024-01-06", 62000],
+      [3, 101, "2024-01-05", 59000],
+      [4, 101, "2024-01-07", 22000],
+      [5, 102, "2024-01-05", 70000],
+      [6, 102, "2024-01-09", 90000],
+      [7, 103, "2024-01-11", 48000],
+      [8, 103, "2024-01-12", 53000],
+      [9, 104, "2024-01-15", 76000],
+      [10, 104, "2024-01-17", 81000],
+      [11, 105, "2024-01-20", 95000],
+      [12, 105, "2024-01-22", 99000]
+    ]
   }
 ]

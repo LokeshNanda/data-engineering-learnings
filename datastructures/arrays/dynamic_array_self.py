@@ -14,6 +14,12 @@ class DynamicArray(object):
             return IndexError(f'{k} is Out of bound')
         
         return self.A[k]
+    
+    def __str__(self):
+        result = ''
+        for i in range(self.n):
+            result = result + str(i) + ','
+        return '[' + result[:-1] + ']'
         
     def create_array(self, new_cap):
         '''
@@ -21,6 +27,11 @@ class DynamicArray(object):
         then returning an instance of that array.
         '''
         return (new_cap * ctypes.py_object)() 
+    
+    def pop(self):
+        if self.n == 0:
+            return 'List is already empty'
+        self.n = self.n-1
     
     def append(self, item):
         if self.n == self.capacity:
@@ -87,4 +98,6 @@ arr.append(6)
 # print(arr[1])
 arr.insertAt(11,1)
 arr.removeAt(1)
-print(arr[0], arr[1], arr[2])
+print(arr)
+arr.pop()
+print(arr)

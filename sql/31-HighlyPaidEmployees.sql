@@ -23,7 +23,7 @@ emp_id | salary | department
     106 |  46000 | Science
     110 |  55000 | Engineering
     112 |  47000 | Analytics
-    113 |  43000 | Engineering
+    113 |  43000 | Engineering  
 (8 rows)
 
 */

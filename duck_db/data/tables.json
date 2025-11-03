@@ -252,5 +252,78 @@
       ["FY22", "2022-05-05", "2022-08-29"],
       ["FY23", "2023-05-05", "2023-08-31"]
     ]
+  },
+  {
+    "table_name": "employee",
+    "schema": [
+      {
+        "column_name": "emp_id",
+        "data_type": "INTEGER"
+      },
+      {
+        "column_name": "salary",
+        "data_type": "INTEGER"
+      },
+      {
+        "column_name": "department",
+        "data_type": "VARCHAR"
+      }
+    ],
+    "data": [
+      [100, 40000, "Analytics"],
+      [101, 30000, "Analytics"],
+      [102, 50000, "Analytics"],
+      [103, 45000, "Engineering"],
+      [104, 48000, "Engineering"],
+      [105, 51000, "Engineering"],
+      [106, 46000, "Science"],
+      [107, 38000, "Science"],
+      [108, 37000, "Science"],
+      [109, 42000, "Analytics"],
+      [110, 55000, "Engineering"],
+      [111, 39000, "Science"],
+      [112, 47000, "Analytics"],
+      [113, 43000, "Engineering"],
+      [114, 36000, "Science"]
+    ]
+  },
+  {
+    "table_name": "users_phone",
+    "schema": [
+      {
+        "column_name": "user_name",
+        "data_type": "VARCHAR(10)"
+      },
+      {
+        "column_name": "monthly_salary",
+        "data_type": "INTEGER"
+      },
+      {
+        "column_name": "savings",
+        "data_type": "INTEGER"
+      }
+    ],
+    "data": [
+      ["Rahul", 40000, 15000],
+      ["Vivek", 70000, 10000]
+    ]
+  },
+  {
+    "table_name": "phones",
+    "schema": [
+      {
+        "column_name": "phone_name",
+        "data_type": "VARCHAR(15)"
+      },
+      {
+        "column_name": "cost",
+        "data_type": "INTEGER"
+      }
+    ],
+    "data": [
+      ["iphone-12", 60000],
+      ["oneplus-12", 50000],
+      ["iphone-14", 70000]
+    ]
   }
 ]

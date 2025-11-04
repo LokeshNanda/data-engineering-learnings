@@ -325,5 +325,36 @@
       ["oneplus-12", 50000],
       ["iphone-14", 70000]
     ]
+  },
+  {
+    "table_name": "transactions_aov",
+    "schema": [
+      {
+        "column_name": "order_id",
+        "data_type": "INTEGER"
+      },
+      {
+        "column_name": "user_id",
+        "data_type": "INTEGER"
+      },
+      {
+        "column_name": "transaction_amount",
+        "data_type": "DECIMAL(5,2)"
+      },
+      {
+        "column_name": "transaction_date",
+        "data_type": "DATE"
+      }
+    ],
+    "data": [
+      [1, 101, 50.00, "2024-02-24"],
+      [2, 102, 75.00, "2024-02-24"],
+      [3, 103, 100.00, "2024-02-25"],
+      [4, 104, 30.00, "2024-02-26"],
+      [5, 105, 200.00, "2024-02-27"],
+      [6, 106, 50.00, "2024-02-27"],
+      [7, 107, 150.00, "2024-02-27"],
+      [8, 108, 80.00, "2024-02-29"]
+    ]
   }
 ]

@@ -356,5 +356,42 @@
       [7, 107, 150.00, "2024-02-27"],
       [8, 108, 80.00, "2024-02-29"]
     ]
+  },
+  {
+    "table_name": "employee_manager",
+    "schema": [
+      {
+        "column_name": "emp_id",
+        "data_type": "INTEGER"
+      },
+      {
+        "column_name": "emp_name",
+        "data_type": "VARCHAR(10)"
+      },
+      {
+        "column_name": "joining_date",
+        "data_type": "DATE"
+      },
+      {
+        "column_name": "salary",
+        "data_type": "INTEGER"
+      },
+      {
+        "column_name": "manager_id",
+        "data_type": "INTEGER"
+      }
+    ],
+    "data": [
+      [1, "Ankit", "2021-01-01", 10000, 4],
+      [2, "Mohit", "2022-05-01", 15000, 5],
+      [3, "Vikas", "2023-06-01", 10000, 4],
+      [4, "Rohit", "2022-02-01", 5000, 2],
+      [5, "Mudit", "2021-03-01", 12000, 6],
+      [6, "Agam", "2024-02-01", 12000, 2],
+      [7, "Sanjay", "2024-02-21", 9000, 2],
+      [8, "Ashish", "2023-01-05", 5000, 2],
+      [9, "Mukesh", "2020-02-03", 6000, 6],
+      [10, "Rakesh", "2022-08-01", 7000, 6]
+    ]
   }
 ]

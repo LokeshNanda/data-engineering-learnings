@@ -393,5 +393,81 @@
       [9, "Mukesh", "2020-02-03", 6000, 6],
       [10, "Rakesh", "2022-08-01", 7000, 6]
     ]
+  },
+  {
+    "table_name": "driver_ratings",
+    "schema": [
+      {
+        "column_name": "driver_id",
+        "data_type": "INTEGER"
+      },
+      {
+        "column_name": "avg_rating",
+        "data_type": "DECIMAL(3,2)"
+      }
+    ],
+    "data": [
+      [1, 4.80],
+      [2, 4.50],
+      [3, 3.90],
+      [4, 4.20],
+      [5, 4.70],
+      [6, 3.60],
+      [7, 4.90],
+      [8, 3.80],
+      [9, 4.40],
+      [10, 3.50],
+      [11, 4.10],
+      [12, 4.60]
+    ]
+  },
+  {
+    "table_name": "inventory",
+    "schema": [
+      {
+        "column_name": "location_id",
+        "data_type": "INTEGER"
+      },
+      {
+        "column_name": "product_id",
+        "data_type": "INTEGER"
+      },
+      {
+        "column_name": "inventory_level",
+        "data_type": "INTEGER"
+      },
+      {
+        "column_name": "inventory_target",
+        "data_type": "INTEGER"
+      }
+    ],
+    "data": [
+      [1, 101, 90, 80],
+      [1, 102, 100, 85],
+      [2, 102, 90, 80],
+      [2, 103, 70, 95],
+      [2, 104, 50, 60],
+      [3, 103, 120, 100],
+      [4, 104, 90, 102]
+    ]
+  },
+  {
+    "table_name": "products",
+    "schema": [
+      {
+        "column_name": "product_id",
+        "data_type": "INTEGER"
+      },
+      {
+        "column_name": "unit_cost",
+        "data_type": "DECIMAL(5,2)"
+      }
+    ],
+    "data": [
+      [101, 51.50],
+      [102, 55.50],
+      [103, 59.00],
+      [104, 50.00]
+    ]
   }
 ]

@@ -325,5 +325,182 @@
       ["oneplus-12", 50000],
       ["iphone-14", 70000]
     ]
+  },
+  {
+    "table_name": "transactions_aov",
+    "schema": [
+      {
+        "column_name": "order_id",
+        "data_type": "INTEGER"
+      },
+      {
+        "column_name": "user_id",
+        "data_type": "INTEGER"
+      },
+      {
+        "column_name": "transaction_amount",
+        "data_type": "DECIMAL(5,2)"
+      },
+      {
+        "column_name": "transaction_date",
+        "data_type": "DATE"
+      }
+    ],
+    "data": [
+      [1, 101, 50.00, "2024-02-24"],
+      [2, 102, 75.00, "2024-02-24"],
+      [3, 103, 100.00, "2024-02-25"],
+      [4, 104, 30.00, "2024-02-26"],
+      [5, 105, 200.00, "2024-02-27"],
+      [6, 106, 50.00, "2024-02-27"],
+      [7, 107, 150.00, "2024-02-27"],
+      [8, 108, 80.00, "2024-02-29"]
+    ]
+  },
+  {
+    "table_name": "employee_manager",
+    "schema": [
+      {
+        "column_name": "emp_id",
+        "data_type": "INTEGER"
+      },
+      {
+        "column_name": "emp_name",
+        "data_type": "VARCHAR(10)"
+      },
+      {
+        "column_name": "joining_date",
+        "data_type": "DATE"
+      },
+      {
+        "column_name": "salary",
+        "data_type": "INTEGER"
+      },
+      {
+        "column_name": "manager_id",
+        "data_type": "INTEGER"
+      }
+    ],
+    "data": [
+      [1, "Ankit", "2021-01-01", 10000, 4],
+      [2, "Mohit", "2022-05-01", 15000, 5],
+      [3, "Vikas", "2023-06-01", 10000, 4],
+      [4, "Rohit", "2022-02-01", 5000, 2],
+      [5, "Mudit", "2021-03-01", 12000, 6],
+      [6, "Agam", "2024-02-01", 12000, 2],
+      [7, "Sanjay", "2024-02-21", 9000, 2],
+      [8, "Ashish", "2023-01-05", 5000, 2],
+      [9, "Mukesh", "2020-02-03", 6000, 6],
+      [10, "Rakesh", "2022-08-01", 7000, 6]
+    ]
+  },
+  {
+    "table_name": "driver_ratings",
+    "schema": [
+      {
+        "column_name": "driver_id",
+        "data_type": "INTEGER"
+      },
+      {
+        "column_name": "avg_rating",
+        "data_type": "DECIMAL(3,2)"
+      }
+    ],
+    "data": [
+      [1, 4.80],
+      [2, 4.50],
+      [3, 3.90],
+      [4, 4.20],
+      [5, 4.70],
+      [6, 3.60],
+      [7, 4.90],
+      [8, 3.80],
+      [9, 4.40],
+      [10, 3.50],
+      [11, 4.10],
+      [12, 4.60]
+    ]
+  },
+  {
+    "table_name": "inventory",
+    "schema": [
+      {
+        "column_name": "location_id",
+        "data_type": "INTEGER"
+      },
+      {
+        "column_name": "product_id",
+        "data_type": "INTEGER"
+      },
+      {
+        "column_name": "inventory_level",
+        "data_type": "INTEGER"
+      },
+      {
+        "column_name": "inventory_target",
+        "data_type": "INTEGER"
+      }
+    ],
+    "data": [
+      [1, 101, 90, 80],
+      [1, 102, 100, 85],
+      [2, 102, 90, 80],
+      [2, 103, 70, 95],
+      [2, 104, 50, 60],
+      [3, 103, 120, 100],
+      [4, 104, 90, 102]
+    ]
+  },
+  {
+    "table_name": "products",
+    "schema": [
+      {
+        "column_name": "product_id",
+        "data_type": "INTEGER"
+      },
+      {
+        "column_name": "unit_cost",
+        "data_type": "DECIMAL(5,2)"
+      }
+    ],
+    "data": [
+      [101, 51.50],
+      [102, 55.50],
+      [103, 59.00],
+      [104, 50.00]
+    ]
+  },
+  {
+    "table_name": "orders_zm",
+    "schema": [
+      {
+        "column_name": "order_id",
+        "data_type": "INTEGER"
+      },
+      {
+        "column_name": "order_date",
+        "data_type": "DATETIME"
+      },
+      {
+        "column_name": "customer_name",
+        "data_type": "STRING"
+      },
+      {
+        "column_name": "order_value",
+        "data_type": "INTEGER"
+      }
+    ],
+    "data": [
+      [1, "2023-01-13 12:30:00", "Rahul", 250],
+      [2, "2023-01-13 08:30:00", "Rahul", 350],
+      [3, "2023-01-13 09:00:00", "Mudit", 230],
+      [4, "2023-01-14 08:30:00", "Rahul", 150],
+      [5, "2023-01-14 12:03:00", "Suresh", 130],
+      [6, "2023-01-15 09:34:00", "Mudit", 250],
+      [7, "2023-01-15 12:30:00", "Mudit", 300],
+      [8, "2023-01-15 09:30:00", "Rahul", 250],
+      [9, "2023-01-15 12:35:00", "Rahul", 300],
+      [10, "2023-01-15 12:03:00", "Suresh", 130]
+    ]
   }
 ]

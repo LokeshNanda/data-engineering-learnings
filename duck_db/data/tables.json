@@ -471,6 +471,49 @@
     ]
   },
   {
+    "table_name": "credit_card_transactions",
+    "schema": [
+      {
+        "column_name": "transaction_id",
+        "data_type": "INTEGER"
+      },
+      {
+        "column_name": "city",
+        "data_type": "VARCHAR"
+      },
+      {
+        "column_name": "transaction_date",
+        "data_type": "DATE"
+      },
+      {
+        "column_name": "card_type",
+        "data_type": "VARCHAR"
+      },
+      {
+        "column_name": "gender",
+        "data_type": "VARCHAR"
+      },
+      {
+        "column_name": "amount",
+        "data_type": "INTEGER"
+      }
+    ],
+    "data": [
+      [1, "Delhi", "2024-01-13", "Gold", "F", 500],
+      [2, "Bengaluru", "2024-01-13", "Silver", "M", 1000],
+      [3, "Mumbai", "2024-01-14", "Silver", "F", 1200],
+      [4, "Bengaluru", "2024-01-14", "Gold", "M", 900],
+      [5, "Bengaluru", "2024-01-14", "Gold", "F", 300],
+      [6, "Delhi", "2024-01-15", "Silver", "M", 200],
+      [7, "Mumbai", "2024-01-15", "Gold", "F", 900],
+      [8, "Delhi", "2024-01-15", "Gold", "F", 800],
+      [9, "Mumbai", "2024-01-15", "Silver", "F", 150],
+      [10, "Mumbai", "2024-01-16", "Platinum", "F", 1900],
+      [11, "Bengaluru", "2024-01-16", "Platinum", "M", 1250],
+      [12, "Delhi", "2024-01-16", "Platinum", "F", 130]
+    ]
+  },
+  {
     "table_name": "orders_zm",
     "schema": [
       {

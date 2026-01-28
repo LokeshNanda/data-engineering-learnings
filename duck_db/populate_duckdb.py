@@ -3,9 +3,10 @@ from typing import Dict, List, Tuple, Any
 import os
 import json
 
-# Define the database file name
-DB_FILE = '.\duck_db\sql_challenges.duckdb'
-DATA_FILE = '.\duck_db\data\\tables.json'
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+DB_FILE = os.path.join(BASE_DIR, "sql_challenges.duckdb")
+DATA_FILE = os.path.join(BASE_DIR, "data", "tables.json")
 
 def load_table_data(file_path: str) -> list:
     """Loads the table definitions and data from a JSON file."""

@@ -30,7 +30,7 @@ jobs:
       - name: Install MkDocs
         run: |
           python -m pip install --upgrade pip
-          pip install mkdocs
+          pip install mkdocs mkdocs-material
 
       - name: Sync markdown into docs/
         run: python scripts/sync_docs.py

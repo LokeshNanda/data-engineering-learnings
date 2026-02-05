@@ -3,6 +3,8 @@ site_description: Practice notes and exercises for data engineering topics.
 docs_dir: docs
 site_dir: site
 theme:
-  name: readthedocs
+  name: material
+  palette:
+    primary: teal
 plugins:
   - search
